@@ -22,8 +22,6 @@ describe('Pruebas en <TodoApp />', () => {
 
         const wrapper = mount( <TodoApp /> );
 
-        console.log(wrapper);
-
         act( () => {
             wrapper.find('TodoAdd').prop('handleAddTodo')( demoTodos[0] );
             wrapper.find('TodoAdd').prop('handleAddTodo')( demoTodos[1] );
